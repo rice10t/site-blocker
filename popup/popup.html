@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <fieldset>
+      <legend>On/Off</legend>
+      <label>
+        <input id="blocking-on" type="radio" name="blocking" value="on" />
+        On
+      </label>
+      <label>
+        <input id="blocking-off" type="radio" name="blocking" value="off" />
+        Off
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Site list</legend>
+      <textarea id="site-list"></textarea>
+      <button id="save-site-list">Save</button>
+    </fieldset>
+
+    <script type="module" src="../shared/storage.js"></script>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

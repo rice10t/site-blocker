@@ -1,0 +1,9 @@
+html,
+body {
+  width: 400px;
+}
+
+#site-list{
+  width: 360px;
+  height: 200px;
+}

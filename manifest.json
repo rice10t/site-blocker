@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "site-blocker",
+  "version": "0.1.0",
+  "description": "site blocker",
+  "icons": {
+    "48": "icons/circle.drawio.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["main.js"]
+    }
+  ],
+  "background": {
+    "page": "background-page.html",
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "icons/circle.drawio.svg",
+    "default_title": "site-blocker",
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": ["*://*/*", "storage"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{6e807606-1e3d-535f-bf3f-090c9bda664b}"
+    }
+  }
+}
